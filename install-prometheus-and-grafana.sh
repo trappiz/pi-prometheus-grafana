@@ -4,15 +4,15 @@ Colour='\033[1;31m'
 less='\033[0m'
 
 echo -e "${Colour}By using this script, you'll update the system, install the stable sion of prometheus and grafana of your choice.\nUse CTRL+C to cancel the script\n\n${less}"
-read -p "Please enter a sion (e.g: 2.23.0) of Prometheus or press enter for version 2.23.0: " version_prometheus
+read -p "Please enter a version (e.g: 2.23.0) of Prometheus or press enter for version 2.23.0: " version_prometheus
 
 if [[ -z "$version_prometheus" ]]; then
         version_prometheus='2.23.0'
 fi
 
-read -p "Please enter a sion (e.g: 7.3.3) of Grafana or press enter for version 7.3.3: " version_grafana
+read -p "Please enter a version (e.g: 7.3.3) of Grafana or press enter for version 7.3.3: " version_grafana
 
-if [[ -z "$sion_prometheus" ]]; then
+if [[ -z "$version_prometheus" ]]; then
         version_grafana='7.3.3'
 fi
 
